@@ -5,12 +5,12 @@
 class Sitepanda < Formula
   desc ""
   homepage ""
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/hokupod/sitepanda/releases/download/v0.1.0/sitepanda_0.1.0_darwin_arm64.tar.gz"
-      sha256 "07ccf194957ab0b24e1550703f825bad865b03cd2ebec8c0c9988a2bf3c28156"
+      url "https://github.com/hokupod/sitepanda/releases/download/v0.1.1/sitepanda_0.1.1_darwin_arm64.tar.gz"
+      sha256 "3e155f7dc9f7bf78c80bc9d8ba8c98bf3c8ba66bdf3e8dfd3d1a99fdb94e9965"
 
       def install
         bin.install "sitepanda"
@@ -23,8 +23,8 @@ class Sitepanda < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/hokupod/sitepanda/releases/download/v0.1.0/sitepanda_0.1.0_linux_amd64.tar.gz"
-      sha256 "f2cd706014d41d8c9f9e1f88bdf2baf6a57c511f0eedf6ecbdfdca6d793a0d13"
+      url "https://github.com/hokupod/sitepanda/releases/download/v0.1.1/sitepanda_0.1.1_linux_amd64.tar.gz"
+      sha256 "1d62357d1d19a1ea1369536c203df5d828a035c9feb87870cf8248641aee6032"
       def install
         bin.install "sitepanda"
         bash_completion.install "completions/sitepanda.bash" => "sitepanda"
