@@ -35,7 +35,7 @@ cask "fs-tracer" do
 
   caveats do
     "This CLI is unsigned. If macOS blocks execution, remove the quarantine flag:"
-    "  xattr -dr com.apple.quarantine "$(which fs-tracer)""
+    "  xattr -dr com.apple.quarantine #{HOMEBREW_PREFIX}/bin/fs-tracer"
   end
 
   # No zap stanza required
