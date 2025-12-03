@@ -3,7 +3,7 @@ cask "fs-tracer" do
   name "fs-tracer"
   desc ""
   homepage ""
-  version "0.0.1"
+  version "0.1.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -18,12 +18,12 @@ cask "fs-tracer" do
     on_intel do
       url "https://github.com/hokupod/fs-tracer/releases/download/v#{version}/fs-tracer_#{version}_darwin_amd64.tar.gz",
         verified: "github.com/hokupod/fs-tracer"
-      sha256 "be5000e882e54464460c260f51fcfe5f6e674c18c16bbe79a915cd53ce3f0dc8"
+      sha256 "ecd7965ac1646fd36f5da9ec24bb30e3e1e25df53e8abd956a60f204a3149185"
     end
     on_arm do
       url "https://github.com/hokupod/fs-tracer/releases/download/v#{version}/fs-tracer_#{version}_darwin_arm64.tar.gz",
         verified: "github.com/hokupod/fs-tracer"
-      sha256 "c90131909a321fa8686e0876a3fec65c51ba4421ab837071814127e558b039eb"
+      sha256 "38b782a2c5df06b4ab28426dd69d300d4c1f4db9c68b74209e12cfc33bc93b8f"
     end
   end
 
